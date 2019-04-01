@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Sedinta 7</title>
+		<meta charset="utf-8" />
+		
+		<style>
+			.message { display: none; color: red; }
+			.form-item { margin-bottom: 15px; }
+		</style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="scripts.js"></script>
+		
+	</head>
+	
+	<body>
+	
+		<form id="registration" action="http://localhost/procesare.php" autocomplete="off">
+			<div class="form-item">
+				* E-mail:<br />
+				<input type="text" name="email" />
+				<br />
+				<div class="message">Field cannot be empty.</div>
+			</div>
+			<div class="form-item">
+				* Password:<br />
+				<input type="password" name="password" />
+				<br />
+				<div class="message">Field cannot be empty.</div>
+			</div>
+			<div class="form-item">
+				Address:<br />
+				<input type="text" name="address" />
+			</div>
+			
+			<a href="#" id="form-submit">Submit</a>
+		</form>
+		
+		<hr />
+		
+		<div id="content">
+			<p>Niste continut initial</p>
+		</div>
+		
+		<hr />
+		
+		<a href="#" id="readmore">Read more</a>
+	
+	</body>
+
+</html>
